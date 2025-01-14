@@ -1,7 +1,9 @@
 <script lang="ts">
+	import { base } from '$app/paths';
+
 	const navigations = [
-		{ path: '/', label: 'Intro' },
-		{ path: '/blogs', label: 'Blogs' }
+		{ path: base + '/', label: 'Intro' },
+		{ path: base + '/blogs', label: 'Blogs' }
 	];
 </script>
 
