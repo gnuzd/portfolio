@@ -1,0 +1,48 @@
+<script lang="ts">
+	const navigations = [
+		{ path: '/', label: 'Intro' },
+		{ path: '/blogs', label: 'Blogs' }
+	];
+</script>
+
+<nav>
+	<ul class="links">
+		{#each navigations as item}
+			<li><a href={item.path}>{item.label}</a></li>
+		{/each}
+	</ul>
+</nav>
+
+<style>
+	nav {
+		background-color: var(--surface-1);
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		padding: var(--size-4) var(--size-10);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.links {
+		margin-block: var(--size-7);
+
+		@media (min-width: 768px) {
+			display: flex;
+			gap: var(--size-7);
+			margin-block: 0;
+		}
+
+		@media (width < 768px) {
+			display: none;
+		}
+
+		a {
+			text-decoration: none;
+			color: var(--text-1);
+			font-weight: var(--font-weight-5);
+		}
+	}
+</style>

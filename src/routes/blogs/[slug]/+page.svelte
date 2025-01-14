@@ -34,7 +34,7 @@
 		margin-inline: auto;
 
 		@media (--md-n-above) {
-			max-inline-size: 60%;
+			max-inline-size: 50%;
 		}
 	}
 
@@ -51,9 +51,9 @@
 		font-size: var(--font-size-4);
 	}
 
-  .date {
-    margin-top: var(--size-2);
-  }
+	.date {
+		margin-top: var(--size-2);
+	}
 
 	.tags {
 		display: flex;
