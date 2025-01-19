@@ -47,6 +47,9 @@
     "vitest": "^2.0.4"
   },
   "dependencies": {
-    "open-props": "^1.7.10"
+    "@google/generative-ai": "^0.21.0",
+    "marked": "^15.0.6",
+    "open-props": "^1.7.10",
+    "svelte-typewriter": "^3.2.3"
   }
 }

@@ -16,30 +16,31 @@
 </nav>
 
 <style>
-	nav {
-		background-color: var(--surface-1);
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		padding: var(--size-4) var(--size-10);
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	@media (min-width: 768px) {
+		nav {
+			background-color: var(--surface-1);
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			padding: var(--size-4) var(--size-10);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	@media (width < 768px) {
+		nav {
+			display: none;
+		}
 	}
 
 	.links {
-		margin-block: var(--size-7);
-
-		@media (min-width: 768px) {
-			display: flex;
-			gap: var(--size-7);
-			margin-block: 0;
-		}
-
-		@media (width < 768px) {
-			display: none;
-		}
+		/*margin-block: var(--size-7);*/
+		display: flex;
+		gap: var(--size-7);
+		margin-block: 0;
 
 		a {
 			text-decoration: none;

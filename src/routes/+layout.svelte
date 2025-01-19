@@ -11,6 +11,7 @@
 
 <style>
 	main {
-		margin-top: var(--size-7);
+		height: 100dvh;
+		padding: var(--size-6);
 	}
 </style>

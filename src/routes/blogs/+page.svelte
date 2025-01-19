@@ -1,5 +1,5 @@
 <script lang="ts">
-	import * as config from '$lib/config';
+	import config from '$lib/config';
 	import { formatDate } from '$lib/utils';
 
 	const { data } = $props();
@@ -22,7 +22,12 @@
 </section>
 
 <style>
+	section {
+		margin-top: var(--size-7);
+	}
 	.posts {
+		max-inline-size: var(--size-content-3);
+		margin: 0 auto;
 		display: grid;
 		gap: var(--size-7);
 	}

@@ -1,5 +1,5 @@
 <script>
-	import * as config from '$lib/config';
+	import config from '$lib/config';
 	import { formatDate } from '$lib/utils';
 	const { data } = $props();
 </script>
