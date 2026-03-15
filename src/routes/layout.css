@@ -1,0 +1,128 @@
+@import 'tailwindcss';
+
+@theme {
+	--font-display: 'Outfit', sans-serif;
+	--font-body: 'Plus Jakarta Sans', sans-serif;
+	--font-mono: 'JetBrains Mono', 'monospace';
+
+	--color-brand-primary: #818cf8;
+	--color-brand-dark: #020617;
+	--color-brand-surface: #070b14;
+
+	@keyframes scanline {
+		0% {
+			bottom: 100%;
+		}
+		100% {
+			bottom: -100px;
+		}
+	}
+
+	@keyframes ticker {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(-50%);
+		}
+	}
+}
+
+body {
+	background-color: #020617;
+	color: #f8fafc;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	overflow-x: hidden;
+}
+
+.grid-overlay {
+	position: fixed;
+	inset: 0;
+	background-image:
+		linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+		linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+	background-size: 80px 80px;
+	z-index: -1;
+	pointer-events: none;
+}
+
+.vertical-line {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 1px;
+	background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.05), transparent);
+	z-index: -1;
+}
+
+.glass {
+	background: rgba(2, 6, 23, 0.8);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.project-list {
+	counter-reset: project-counter;
+}
+
+.project-card::before {
+	counter-increment: project-counter;
+	content: 'PROJECT_0' counter(project-counter);
+	font-family: 'JetBrains Mono', monospace;
+	font-size: 11px;
+	font-weight: 700;
+	color: #64748b;
+	letter-spacing: 0.2em;
+	margin-bottom: 2rem;
+	display: block;
+}
+
+.project-card {
+	border: 1px solid rgba(255, 255, 255, 0.05);
+	background: rgba(255, 255, 255, 0.01);
+	transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.project-card:hover {
+	border-color: rgba(255, 255, 255, 0.2);
+	background: rgba(255, 255, 255, 0.03);
+	transform: translateY(-4px);
+}
+
+.scanline {
+	width: 100%;
+	height: 100px;
+	z-index: 10;
+	background: linear-gradient(0deg, rgba(129, 140, 248, 0.05) 0%, transparent 100%);
+	opacity: 0.1;
+	position: absolute;
+	bottom: 100%;
+	animation: scanline 8s linear infinite;
+}
+
+.ticker-wrap {
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+	background: rgba(0, 0, 0, 0.3);
+}
+.ticker {
+	display: inline-block;
+	white-space: nowrap;
+	animation: ticker 50s linear infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+	width: 5px;
+}
+::-webkit-scrollbar-track {
+	background: #020617;
+}
+::-webkit-scrollbar-thumb {
+	background: #1e293b;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #818cf8;
+}
