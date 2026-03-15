@@ -1,7 +1,7 @@
 <section id="projects" class="mb-24">
 	<div class="mb-10 flex items-center gap-4">
-		<h2 class="text-xl font-bold tracking-tight text-gruv-fg0 md:text-3xl">Deployments</h2>
-		<div class="h-[1px] flex-1 bg-gruv-bg2"></div>
+		<h2 class="text-xl font-bold tracking-tight text-base-content-100 md:text-3xl">Deployments</h2>
+		<div class="h-[1px] flex-1 bg-base-300"></div>
 	</div>
 
 	<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -9,7 +9,7 @@
 		<div class="native-card desktop-card">
 			<div class="mb-6 flex items-start justify-between">
 				<div
-					class="flex h-10 w-10 items-center justify-center rounded-lg bg-gruv-aqua/10 text-gruv-aqua"
+					class="flex h-10 w-10 items-center justify-center rounded-lg bg-aqua/10 text-aqua"
 				>
 					<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
 						><path
@@ -20,22 +20,22 @@
 						/></svg
 					>
 				</div>
-				<span class="font-mono text-[10px] font-bold text-gruv-gray uppercase">Node_01</span>
+				<span class="font-mono text-[10px] font-bold text-gray uppercase">Node_01</span>
 			</div>
-			<h3 class="mb-2 text-xl font-bold text-gruv-fg0">Hyper-Storage Core</h3>
-			<p class="mb-6 text-sm leading-relaxed text-gruv-fg1 opacity-80">
+			<h3 class="mb-2 text-xl font-bold text-base-content-100">Hyper-Storage Core</h3>
+			<p class="mb-6 text-sm leading-relaxed text-base-content-200 opacity-80">
 				Rust-based distributed key-value store with raft consensus implementation.
 			</p>
-			<div class="flex gap-2 font-mono text-[9px] font-bold text-gruv-blue uppercase">
-				<span class="rounded bg-gruv-bg2 px-2 py-1">Rust</span>
-				<span class="rounded bg-gruv-bg2 px-2 py-1">gRPC</span>
+			<div class="flex gap-2 font-mono text-[9px] font-bold text-blue uppercase">
+				<span class="rounded bg-base-300 px-2 py-1">Rust</span>
+				<span class="rounded bg-base-300 px-2 py-1">gRPC</span>
 			</div>
 		</div>
 
 		<div class="native-card desktop-card">
 			<div class="mb-6 flex items-start justify-between">
 				<div
-					class="flex h-10 w-10 items-center justify-center rounded-lg bg-gruv-purple/10 text-gruv-purple"
+					class="flex h-10 w-10 items-center justify-center rounded-lg bg-purple/10 text-purple"
 				>
 					<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
 						><path
@@ -46,22 +46,22 @@
 						/></svg
 					>
 				</div>
-				<span class="font-mono text-[10px] font-bold text-gruv-gray uppercase">Node_02</span>
+				<span class="font-mono text-[10px] font-bold text-gray uppercase">Node_02</span>
 			</div>
-			<h3 class="mb-2 text-xl font-bold text-gruv-fg0">TaskStream OS</h3>
-			<p class="mb-6 text-sm leading-relaxed text-gruv-fg1 opacity-80">
+			<h3 class="mb-2 text-xl font-bold text-base-content-100">TaskStream OS</h3>
+			<p class="mb-6 text-sm leading-relaxed text-base-content-200 opacity-80">
 				Next.js 14 real-time collaborative platform with WebSocket synchronization.
 			</p>
-			<div class="flex gap-2 font-mono text-[9px] font-bold text-gruv-blue uppercase">
-				<span class="rounded bg-gruv-bg2 px-2 py-1">Next.js</span>
-				<span class="rounded bg-gruv-bg2 px-2 py-1">Go</span>
+			<div class="flex gap-2 font-mono text-[9px] font-bold text-blue uppercase">
+				<span class="rounded bg-base-300 px-2 py-1">Next.js</span>
+				<span class="rounded bg-base-300 px-2 py-1">Go</span>
 			</div>
 		</div>
 
 		<div class="native-card desktop-card">
 			<div class="mb-6 flex items-start justify-between">
 				<div
-					class="flex h-10 w-10 items-center justify-center rounded-lg bg-gruv-yellow/10 text-gruv-yellow"
+					class="flex h-10 w-10 items-center justify-center rounded-lg bg-yellow/10 text-yellow"
 				>
 					<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
 						><path
@@ -72,15 +72,15 @@
 						/></svg
 					>
 				</div>
-				<span class="font-mono text-[10px] font-bold text-gruv-gray uppercase">Node_03</span>
+				<span class="font-mono text-[10px] font-bold text-gray uppercase">Node_03</span>
 			</div>
-			<h3 class="mb-2 text-xl font-bold text-gruv-fg0">AuthGuard Shield</h3>
-			<p class="mb-6 text-sm leading-relaxed text-gruv-fg1 opacity-80">
+			<h3 class="mb-2 text-xl font-bold text-base-content-100">AuthGuard Shield</h3>
+			<p class="mb-6 text-sm leading-relaxed text-base-content-200 opacity-80">
 				Enterprise authentication microservice with OIDC and biometric support.
 			</p>
-			<div class="flex gap-2 font-mono text-[9px] font-bold text-gruv-blue uppercase">
-				<span class="rounded bg-gruv-bg2 px-2 py-1">Node.js</span>
-				<span class="rounded bg-gruv-bg2 px-2 py-1">Vault</span>
+			<div class="flex gap-2 font-mono text-[9px] font-bold text-blue uppercase">
+				<span class="rounded bg-base-300 px-2 py-1">Node.js</span>
+				<span class="rounded bg-base-300 px-2 py-1">Vault</span>
 			</div>
 		</div>
 	</div>

@@ -1,46 +1,26 @@
 @import 'tailwindcss';
+@import './theme.css';
 
 @theme {
 	--font-display: 'Public Sans', sans-serif;
 	--font-body: 'Public Sans', sans-serif;
 	--font-mono: 'JetBrains Mono', 'monospace';
 
-	/* Gruvbox Backgrounds */
-	--color-gruv-bg0: #282828;
-	--color-gruv-bg1: #32302f;
-	--color-gruv-bg2: #3c3836;
+	--color-base-100: #282828;
+	--color-base-200: #32302f;
+	--color-base-300: #3c3836;
 
-	/* Gruvbox Foregrounds */
-	--color-gruv-fg0: #dfbf8e;
-	--color-gruv-fg1: #d4be98;
+	--color-base-content-100: #dfbf8e;
+	--color-base-content-200: #d4be98;
 
-	/* Gruvbox Accents */
-	--color-gruv-gray: #928374;
-	--color-gruv-red: #ea6962;
-	--color-gruv-orange: #e78a4e;
-	--color-gruv-yellow: #d8a657;
-	--color-gruv-green: #a9b665;
-	--color-gruv-aqua: #89b482;
-	--color-gruv-blue: #7fa2ac;
-	--color-gruv-purple: #d3869b;
-
-	@keyframes scanline {
-		0% {
-			bottom: 100%;
-		}
-		100% {
-			bottom: -100px;
-		}
-	}
-
-	@keyframes ticker {
-		0% {
-			transform: translateX(0);
-		}
-		100% {
-			transform: translateX(-50%);
-		}
-	}
+	--color-gray: #928374;
+	--color-red: #ea6962;
+	--color-orange: #e78a4e;
+	--color-yellow: #d8a657;
+	--color-green: #a9b665;
+	--color-aqua: #89b482;
+	--color-blue: #7fa2ac;
+	--color-purple: #d3869b;
 }
 
 :root {
@@ -49,8 +29,8 @@
 }
 
 body {
-	background-color: #282828;
-	color: #d4be98;
+	background-color: var(--color-base-100);
+	color: var(--color-base-content-200);
 	font-family: 'Public Sans', sans-serif;
 	-webkit-tap-highlight-color: transparent;
 }
@@ -70,10 +50,10 @@ body {
 		padding-bottom: calc(80px + var(--sab));
 	}
 	.native-card {
-		background: #32302f;
+		background: var(--color-base-200);
 		border-radius: 16px;
 		padding: 20px;
-		border: 1px solid #3c3836;
+		border: 1px solid var(--color-base-300);
 	}
 }
 
@@ -84,8 +64,8 @@ body {
 		border: 1px solid transparent;
 	}
 	.desktop-card:hover {
-		background: #32302f;
-		border-color: #3c3836;
+		background: var(--color-base-200);
+		border-color: var(--color-base-300);
 		transform: translateY(-4px);
 	}
 }

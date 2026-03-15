@@ -2,27 +2,27 @@
 	<div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
 		<div>
 			<h1
-				class="mb-6 text-4xl leading-tight font-extrabold tracking-tight text-gruv-fg0 md:text-7xl"
+				class="mb-6 text-4xl leading-tight font-extrabold tracking-tight text-base-content-100 md:text-7xl"
 			>
-				Fullstack <br class="hidden md:block" /> <span class="text-gruv-aqua">Developer</span> &
+				Fullstack <br class="hidden md:block" /> <span class="text-aqua">Developer</span> &
 				<br class="hidden md:block" /> Creator.
 			</h1>
-			<p class="mb-8 max-w-xl text-base leading-relaxed text-gruv-fg1 opacity-90 md:text-xl">
-				Building end-to-end applications from <span class="font-bold text-gruv-orange"
+			<p class="mb-8 max-w-xl text-base leading-relaxed text-base-content-200 opacity-90 md:text-xl">
+				Building end-to-end applications from <span class="font-bold text-orange"
 					>pixel-perfect interfaces</span
 				>
-				to <span class="font-bold text-gruv-blue">robust backends</span>. Specialized in React,
+				to <span class="font-bold text-blue">robust backends</span>. Specialized in React,
 				Node.js, and Cloud Architecture.
 			</p>
 			<div class="flex flex-col gap-4 sm:flex-row">
 				<a
 					href="mailto:dev@email.com"
-					class="rounded-xl bg-gruv-fg0 px-8 py-4 text-center text-xs font-bold tracking-widest text-gruv-bg0 uppercase shadow-lg transition-all active:opacity-80 md:rounded-lg md:hover:bg-gruv-aqua"
+					class="rounded-xl bg-base-content-100 px-8 py-4 text-center text-xs font-bold tracking-widest text-base-100 uppercase shadow-lg transition-all active:opacity-80 md:rounded-lg md:hover:bg-aqua"
 				>
 					Hire the Terminal
 				</a>
 				<button
-					class="flex items-center justify-center gap-3 rounded-xl border border-gruv-bg2 bg-gruv-bg1 px-8 py-4 font-mono text-xs font-bold tracking-widest text-gruv-fg1 uppercase transition-colors hover:text-gruv-fg0 md:rounded-lg"
+					class="flex items-center justify-center gap-3 rounded-xl border border-base-300 bg-base-200 px-8 py-4 font-mono text-xs font-bold tracking-widest text-base-content-200 uppercase transition-colors hover:text-base-content-100 md:rounded-lg"
 				>
 					<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
 						><path
@@ -39,21 +39,21 @@
 
 		<!-- Desktop Only Graphic -->
 		<div
-			class="relative hidden overflow-hidden rounded-2xl border border-gruv-bg2 bg-gruv-bg1 p-8 font-mono text-sm md:block"
+			class="relative hidden overflow-hidden rounded-2xl border border-base-300 bg-base-200 p-8 font-mono text-sm md:block"
 		>
 			<div class="mb-6 flex gap-2">
-				<div class="h-3 w-3 rounded-full bg-gruv-red"></div>
-				<div class="h-3 w-3 rounded-full bg-gruv-yellow"></div>
-				<div class="h-3 w-3 rounded-full bg-gruv-green"></div>
+				<div class="h-3 w-3 rounded-full bg-red"></div>
+				<div class="h-3 w-3 rounded-full bg-yellow"></div>
+				<div class="h-3 w-3 rounded-full bg-green"></div>
 			</div>
-			<p class="mb-2 text-gruv-green">➜ stack_check --interactive</p>
-			<p class="text-gruv-fg1">[Frontend] React / Tailwind / TypeScript</p>
-			<p class="text-gruv-fg1">[Backend] Node.js / PostgreSQL / Redis</p>
-			<p class="text-gruv-fg1">[Infra] Docker / AWS / Terraform</p>
-			<p class="mt-4 text-gruv-orange">➜ current_status</p>
-			<p class="text-gruv-fg1 italic">"Crafting modern digital experiences..."</p>
+			<p class="mb-2 text-green">➜ stack_check --interactive</p>
+			<p class="text-base-content-200">[Frontend] React / Tailwind / TypeScript</p>
+			<p class="text-base-content-200">[Backend] Node.js / PostgreSQL / Redis</p>
+			<p class="text-base-content-200">[Infra] Docker / AWS / Terraform</p>
+			<p class="mt-4 text-orange">➜ current_status</p>
+			<p class="text-base-content-200 italic">"Crafting modern digital experiences..."</p>
 			<div
-				class="absolute -right-10 -bottom-10 h-40 w-40 rounded-full bg-gruv-aqua/5 blur-3xl"
+				class="absolute -right-10 -bottom-10 h-40 w-40 rounded-full bg-aqua/5 blur-3xl"
 			></div>
 		</div>
 	</div>

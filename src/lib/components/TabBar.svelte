@@ -13,7 +13,7 @@
 		>
 		<span class="text-[9px] font-bold uppercase">Home</span>
 	</a>
-	<a href="#projects" class="flex flex-col items-center gap-1 text-gruv-gray">
+	<a href="#projects" class="flex flex-col items-center gap-1 text-gray">
 		<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
 			><path
 				stroke-linecap="round"
@@ -24,7 +24,7 @@
 		>
 		<span class="text-[9px] font-bold uppercase">Work</span>
 	</a>
-	<a href="#journal" class="flex flex-col items-center gap-1 text-gruv-gray">
+	<a href="#journal" class="flex flex-col items-center gap-1 text-gray">
 		<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
 			><path
 				stroke-linecap="round"
@@ -35,7 +35,7 @@
 		>
 		<span class="text-[9px] font-bold uppercase">Logs</span>
 	</a>
-	<a href="mailto:dev@email.com" class="flex flex-col items-center gap-1 text-gruv-gray">
+	<a href="mailto:dev@email.com" class="flex flex-col items-center gap-1 text-gray">
 		<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
 			><path
 				stroke-linecap="round"
