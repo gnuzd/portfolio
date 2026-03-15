@@ -1,13 +1,28 @@
 @import 'tailwindcss';
 
 @theme {
-	--font-display: 'Outfit', sans-serif;
-	--font-body: 'Plus Jakarta Sans', sans-serif;
+	--font-display: 'Public Sans', sans-serif;
+	--font-body: 'Public Sans', sans-serif;
 	--font-mono: 'JetBrains Mono', 'monospace';
 
-	--color-brand-primary: #818cf8;
-	--color-brand-dark: #020617;
-	--color-brand-surface: #070b14;
+	/* Gruvbox Backgrounds */
+	--color-gruv-bg0: #282828;
+	--color-gruv-bg1: #32302f;
+	--color-gruv-bg2: #3c3836;
+
+	/* Gruvbox Foregrounds */
+	--color-gruv-fg0: #dfbf8e;
+	--color-gruv-fg1: #d4be98;
+
+	/* Gruvbox Accents */
+	--color-gruv-gray: #928374;
+	--color-gruv-red: #ea6962;
+	--color-gruv-orange: #e78a4e;
+	--color-gruv-yellow: #d8a657;
+	--color-gruv-green: #a9b665;
+	--color-gruv-aqua: #89b482;
+	--color-gruv-blue: #7fa2ac;
+	--color-gruv-purple: #d3869b;
 
 	@keyframes scanline {
 		0% {
@@ -28,101 +43,49 @@
 	}
 }
 
+:root {
+	--sat: env(safe-area-inset-top);
+	--sab: env(safe-area-inset-bottom);
+}
+
 body {
-	background-color: #020617;
-	color: #f8fafc;
-	font-family: 'Plus Jakarta Sans', sans-serif;
-	overflow-x: hidden;
+	background-color: #282828;
+	color: #d4be98;
+	font-family: 'Public Sans', sans-serif;
+	-webkit-tap-highlight-color: transparent;
 }
 
-.grid-overlay {
-	position: fixed;
-	inset: 0;
-	background-image:
-		linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-		linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-	background-size: 80px 80px;
-	z-index: -1;
-	pointer-events: none;
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+.no-scrollbar {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 }
 
-.vertical-line {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	width: 1px;
-	background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.05), transparent);
-	z-index: -1;
+/* Mobile Specific Layout Constraints */
+@media (max-width: 767px) {
+	body {
+		padding-top: var(--sat);
+		padding-bottom: calc(80px + var(--sab));
+	}
+	.native-card {
+		background: #32302f;
+		border-radius: 16px;
+		padding: 20px;
+		border: 1px solid #3c3836;
+	}
 }
 
-.glass {
-	background: rgba(2, 6, 23, 0.8);
-	backdrop-filter: blur(20px);
-	-webkit-backdrop-filter: blur(20px);
-	border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.project-list {
-	counter-reset: project-counter;
-}
-
-.project-card::before {
-	counter-increment: project-counter;
-	content: 'PROJECT_0' counter(project-counter);
-	font-family: 'JetBrains Mono', monospace;
-	font-size: 11px;
-	font-weight: 700;
-	color: #64748b;
-	letter-spacing: 0.2em;
-	margin-bottom: 2rem;
-	display: block;
-}
-
-.project-card {
-	border: 1px solid rgba(255, 255, 255, 0.05);
-	background: rgba(255, 255, 255, 0.01);
-	transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.project-card:hover {
-	border-color: rgba(255, 255, 255, 0.2);
-	background: rgba(255, 255, 255, 0.03);
-	transform: translateY(-4px);
-}
-
-.scanline {
-	width: 100%;
-	height: 100px;
-	z-index: 10;
-	background: linear-gradient(0deg, rgba(129, 140, 248, 0.05) 0%, transparent 100%);
-	opacity: 0.1;
-	position: absolute;
-	bottom: 100%;
-	animation: scanline 8s linear infinite;
-}
-
-.ticker-wrap {
-	width: 100%;
-	overflow: hidden;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-	background: rgba(0, 0, 0, 0.3);
-}
-.ticker {
-	display: inline-block;
-	white-space: nowrap;
-	animation: ticker 50s linear infinite;
-}
-
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-	width: 5px;
-}
-::-webkit-scrollbar-track {
-	background: #020617;
-}
-::-webkit-scrollbar-thumb {
-	background: #1e293b;
-}
-::-webkit-scrollbar-thumb:hover {
-	background: #818cf8;
+/* Desktop Specific Hover Effects */
+@media (min-width: 768px) {
+	.desktop-card {
+		transition: all 0.3s ease;
+		border: 1px solid transparent;
+	}
+	.desktop-card:hover {
+		background: #32302f;
+		border-color: #3c3836;
+		transform: translateY(-4px);
+	}
 }
