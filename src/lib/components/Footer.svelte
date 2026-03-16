@@ -14,7 +14,7 @@
 				<span class="font-mono text-sm font-bold tracking-tight text-base-content-100 uppercase">
 					{config.author.name}
 				</span>
-				<span class="font-mono text-[10px] tracking-widest text-gray uppercase">
+				<span class="font-mono text-xs tracking-widest text-gray uppercase">
 					Fullstack Developer
 				</span>
 			</div>
@@ -22,18 +22,15 @@
 
 		<div class="flex flex-col items-center gap-6 md:items-end">
 			<div
-				class="flex items-center gap-10 font-mono text-[11px] font-bold tracking-widest text-gray uppercase"
+				class="flex items-center gap-10 font-mono text-xs font-bold tracking-widest text-gray uppercase"
 			>
-				<a href="https://github.com" class="transition-colors hover:text-base-content-100">Github</a
-				>
-				<a href="https://linkedin.com" class="transition-colors hover:text-base-content-100"
-					>LinkedIn</a
-				>
-				<a href="https://twitter.com" class="transition-colors hover:text-base-content-100"
-					>Twitter</a
-				>
+				{#each config.social as { label, url }}
+					<a href={url} class="transition-colors hover:text-base-content-100">
+						{label}
+					</a>
+				{/each}
 			</div>
-			<p class="font-mono text-[10px] tracking-widest text-gray/60 uppercase">
+			<p class="font-mono text-xs tracking-widest text-gray/60 uppercase">
 				© {new Date().getFullYear()}
 				{config.domain} • Crafted for Performance
 			</p>
