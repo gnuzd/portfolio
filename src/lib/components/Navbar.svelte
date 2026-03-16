@@ -3,8 +3,10 @@
 </script>
 
 <!-- DESKTOP TOP NAV (Hidden on Mobile) -->
-<nav class="fixed top-0 z-100 hidden w-full bg-base-100/80 px-8 py-5 backdrop-blur-md md:block">
-	<div class="mx-auto flex max-w-6xl items-center justify-between">
+<nav class="fixed top-12 z-100 hidden w-full md:block">
+	<div
+		class="mx-auto flex max-w-6xl items-center justify-between rounded-2xl bg-base-200/80 px-8 py-4 backdrop-blur-md"
+	>
 		<div class="flex items-center gap-3">
 			<div
 				class="size-8 rounded bg-green text-center text-lg leading-9 font-black text-base-100 uppercase"
