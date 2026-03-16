@@ -1,5 +1,5 @@
 export const config = {
-	domain: 'gnuzd.dev',
+	domain: 'gnuzd.pages.dev',
 	author: {
 		name: 'Gnuzd'
 	}

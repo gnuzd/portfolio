@@ -7,12 +7,14 @@
 				Fullstack <br class="hidden md:block" /> <span class="text-aqua">Developer</span> &
 				<br class="hidden md:block" /> Creator.
 			</h1>
-			<p class="mb-8 max-w-xl text-base leading-relaxed text-base-content-200 opacity-90 md:text-xl">
+			<p
+				class="mb-8 max-w-xl text-base leading-relaxed text-base-content-200 opacity-90 md:text-xl"
+			>
 				Building end-to-end applications from <span class="font-bold text-orange"
 					>pixel-perfect interfaces</span
 				>
-				to <span class="font-bold text-blue">robust backends</span>. Specialized in React,
-				Node.js, and Cloud Architecture.
+				to <span class="font-bold text-blue">robust backends</span>. Specialized in React, Node.js,
+				and Cloud Architecture.
 			</p>
 			<div class="flex flex-col gap-4 sm:flex-row">
 				<a
@@ -52,9 +54,7 @@
 			<p class="text-base-content-200">[Infra] Docker / AWS / Terraform</p>
 			<p class="mt-4 text-orange">➜ current_status</p>
 			<p class="text-base-content-200 italic">"Crafting modern digital experiences..."</p>
-			<div
-				class="absolute -right-10 -bottom-10 h-40 w-40 rounded-full bg-aqua/5 blur-3xl"
-			></div>
+			<div class="absolute -right-10 -bottom-10 h-40 w-40 rounded-full bg-aqua/5 blur-3xl"></div>
 		</div>
 	</div>
 </section>

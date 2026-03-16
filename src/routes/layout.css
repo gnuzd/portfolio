@@ -33,6 +33,9 @@ body {
 	color: var(--color-base-content-200);
 	font-family: 'Public Sans', sans-serif;
 	-webkit-tap-highlight-color: transparent;
+	overflow: hidden;
+	height: 100vh;
+	height: 100dvh;
 }
 
 .no-scrollbar::-webkit-scrollbar {
@@ -41,6 +44,30 @@ body {
 .no-scrollbar {
 	-ms-overflow-style: none;
 	scrollbar-width: none;
+}
+
+/* Custom Scrollbar for Main */
+main::-webkit-scrollbar {
+	width: 6px;
+}
+
+main::-webkit-scrollbar-track {
+	background: var(--color-base-100);
+}
+
+main::-webkit-scrollbar-thumb {
+	background: var(--color-base-300);
+	border-radius: 10px;
+}
+
+main::-webkit-scrollbar-thumb:hover {
+	background: var(--color-gray);
+}
+
+/* For Firefox */
+main {
+	scrollbar-width: thin;
+	scrollbar-color: var(--color-base-300) var(--color-base-100);
 }
 
 /* Mobile Specific Layout Constraints */

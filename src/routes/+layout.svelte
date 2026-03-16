@@ -11,10 +11,14 @@
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
-<Header />
-<Navbar />
-<main class="mx-auto max-w-6xl px-5 py-8 md:pt-32 md:pb-24">
-	{@render children()}
-</main>
-<Footer />
-<TabBar />
+<div class="flex h-dvh flex-col overflow-hidden">
+	<Header />
+	<Navbar />
+	<main class="flex-1 overflow-y-auto px-5 py-8 md:pt-32 md:pb-24">
+		<div class="mx-auto max-w-6xl">
+			{@render children()}
+		</div>
+	</main>
+	<Footer />
+	<TabBar />
+</div>
