@@ -3,13 +3,13 @@
 </script>
 
 <!-- DESKTOP TOP NAV (Hidden on Mobile) -->
-<nav class="fixed top-12 z-100 hidden w-full md:block">
+<nav class="fixed top-8 z-100 hidden w-full md:block">
 	<div
 		class="mx-auto flex max-w-6xl items-center justify-between rounded-2xl bg-base-200/80 px-8 py-4 backdrop-blur-md"
 	>
 		<div class="flex items-center gap-3">
 			<div
-				class="size-8 rounded bg-green text-center text-lg leading-9 font-black text-base-100 uppercase"
+				class="size-8 rounded-lg bg-green text-center text-lg leading-9 font-black text-base-100 uppercase"
 			>
 				{config.author.name.at(0)}
 			</div>
@@ -24,7 +24,7 @@
 			<a href="#journal" class="transition-colors hover:text-base-content-100">02. Journal</a>
 			<a
 				href="mailto:dev@email.com"
-				class="rounded border border-yellow/30 px-4 py-2 text-yellow transition-all hover:bg-yellow hover:text-base-100"
+				class="rounded-lg border border-yellow/30 px-4 py-2 text-yellow transition-all hover:bg-yellow hover:text-base-100"
 				>SSH_CONNECT</a
 			>
 		</div>

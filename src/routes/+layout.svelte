@@ -17,8 +17,8 @@
 	<main class="flex-1 overflow-y-auto px-5 py-8 md:pt-32 md:pb-24">
 		<div class="mx-auto max-w-6xl">
 			{@render children()}
+			<Footer />
 		</div>
 	</main>
-	<Footer />
 	<TabBar />
 </div>

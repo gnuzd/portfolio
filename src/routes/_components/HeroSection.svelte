@@ -2,10 +2,9 @@
 	<div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
 		<div>
 			<h1
-				class="mb-6 text-4xl leading-tight font-extrabold tracking-tight text-base-content-100 md:text-7xl"
+				class="mb-6 text-4xl leading-tight font-extrabold tracking-tight text-base-content-100 md:text-6xl"
 			>
-				Fullstack <br class="hidden md:block" /> <span class="text-aqua">Developer</span> &
-				<br class="hidden md:block" /> Creator.
+				Fullstack <span class="text-aqua">Developer</span>
 			</h1>
 			<p
 				class="mb-8 max-w-xl text-base leading-relaxed text-base-content-200 opacity-90 md:text-xl"
