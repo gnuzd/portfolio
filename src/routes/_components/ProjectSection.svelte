@@ -8,9 +8,7 @@
 		<!-- Project Card -->
 		<div class="native-card desktop-card">
 			<div class="mb-6 flex items-start justify-between">
-				<div
-					class="flex h-10 w-10 items-center justify-center rounded-lg bg-aqua/10 text-aqua"
-				>
+				<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-aqua/10 text-aqua">
 					<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
 						><path
 							stroke-linecap="round"
@@ -34,9 +32,7 @@
 
 		<div class="native-card desktop-card">
 			<div class="mb-6 flex items-start justify-between">
-				<div
-					class="flex h-10 w-10 items-center justify-center rounded-lg bg-purple/10 text-purple"
-				>
+				<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-purple/10 text-purple">
 					<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
 						><path
 							stroke-linecap="round"
@@ -60,9 +56,7 @@
 
 		<div class="native-card desktop-card">
 			<div class="mb-6 flex items-start justify-between">
-				<div
-					class="flex h-10 w-10 items-center justify-center rounded-lg bg-yellow/10 text-yellow"
-				>
+				<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-yellow/10 text-yellow">
 					<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
 						><path
 							stroke-linecap="round"

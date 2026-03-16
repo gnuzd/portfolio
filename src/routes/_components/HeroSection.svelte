@@ -1,3 +1,7 @@
+<script lang="ts">
+	import TerminalGraphic from '$lib/components/TerminalGraphic.svelte';
+</script>
+
 <section class="mb-16 md:mb-32">
 	<div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
 		<div>
@@ -38,22 +42,6 @@
 			</div>
 		</div>
 
-		<!-- Desktop Only Graphic -->
-		<div
-			class="relative hidden overflow-hidden rounded-2xl border border-base-300 bg-base-200 p-8 font-mono text-sm md:block"
-		>
-			<div class="mb-6 flex gap-2">
-				<div class="h-3 w-3 rounded-full bg-red"></div>
-				<div class="h-3 w-3 rounded-full bg-yellow"></div>
-				<div class="h-3 w-3 rounded-full bg-green"></div>
-			</div>
-			<p class="mb-2 text-green">➜ stack_check --interactive</p>
-			<p class="text-base-content-200">[Frontend] React / Tailwind / TypeScript</p>
-			<p class="text-base-content-200">[Backend] Node.js / PostgreSQL / Redis</p>
-			<p class="text-base-content-200">[Infra] Docker / AWS / Terraform</p>
-			<p class="mt-4 text-orange">➜ current_status</p>
-			<p class="text-base-content-200 italic">"Crafting modern digital experiences..."</p>
-			<div class="absolute -right-10 -bottom-10 h-40 w-40 rounded-full bg-aqua/5 blur-3xl"></div>
-		</div>
+		<TerminalGraphic />
 	</div>
 </section>

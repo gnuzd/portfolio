@@ -1,3 +1,5 @@
+:root,
+:root:has(input.theme-controller[value='gruvbox']:checked),
 [data-theme='gruvbox'] {
 	--color-base-100: #282828;
 	--color-base-200: #32302f;
