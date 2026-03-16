@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @import './theme.css';
+@import './button.css';
 
 @theme {
 	--font-display: 'Public Sans', sans-serif;
@@ -40,10 +41,6 @@ body {
 
 .no-scrollbar::-webkit-scrollbar {
 	display: none;
-}
-.no-scrollbar {
-	-ms-overflow-style: none;
-	scrollbar-width: none;
 }
 
 /* Custom Scrollbar for Main */

@@ -1,0 +1,40 @@
+:root,
+:root:has(input.theme-controller[value='gruvbox']:checked),
+[data-theme='gruvbox'] {
+	--color-base-100: #282828;
+	--color-base-200: #32302f;
+	--color-base-300: #3c3836;
+
+	--color-base-content-100: #dfbf8e;
+	--color-base-content-200: #d4be98;
+
+	--color-gray: #928374;
+	--color-red: #ea6962;
+	--color-orange: #e78a4e;
+	--color-yellow: #d8a657;
+	--color-green: #a9b665;
+	--color-aqua: #89b482;
+	--color-blue: #7fa2ac;
+	--color-purple: #d3869b;
+
+  --radius-field: 0.25rem;
+}
+
+:root:has(input.theme-controller[value='cappuccino']:checked),
+[data-theme='cappuccino'] {
+	--color-base-100: #3d2b1f;
+	--color-base-200: #4a3526;
+	--color-base-300: #573f2d;
+
+	--color-base-content-100: #f4ebd0;
+	--color-base-content-200: #d6ad8d;
+
+	--color-gray: #a68a78;
+	--color-red: #c1666b;
+	--color-orange: #d4833b;
+	--color-yellow: #e0b084;
+	--color-green: #a3ad8a;
+	--color-aqua: #8ba88e;
+	--color-blue: #8096a8;
+	--color-purple: #9c84a1;
+}

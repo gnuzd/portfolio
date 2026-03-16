@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { config } from '$lib/config';
+	import Button from '$lib/components/Button.svelte';
 </script>
 
 <!-- DESKTOP TOP NAV (Hidden on Mobile) -->
@@ -22,12 +23,7 @@
 		>
 			<a href="#projects" class="transition-colors hover:text-base-content-100">01. Projects</a>
 			<a href="#journal" class="transition-colors hover:text-base-content-100">02. Journal</a>
-			<a
-				href="mailto:dev@email.com"
-				class="rounded-lg border border-yellow/30 px-4 py-2 text-yellow transition-all hover:bg-yellow hover:text-base-100"
-			>
-				SSH_CONNECT
-			</a>
+			<Button href="mailto:dev@email.com" variant="accent" size="sm" outline>SSH_CONNECT</Button>
 		</div>
 	</div>
 </nav>
