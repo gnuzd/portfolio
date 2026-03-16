@@ -18,7 +18,7 @@
 			<div class="flex flex-col gap-4 sm:flex-row">
 				<a
 					href="mailto:dev@email.com"
-					class="rounded-xl bg-base-content-100 px-8 py-4 text-center text-xs font-bold tracking-widest text-base-100 uppercase shadow-lg transition-all active:opacity-80 md:rounded-lg md:hover:bg-aqua"
+					class="flex items-center justify-center rounded-xl bg-base-content-100 px-8 py-4 text-xs font-bold tracking-widest text-base-100 uppercase shadow-lg transition-all active:opacity-80 md:rounded-lg md:hover:bg-aqua"
 				>
 					Hire the Terminal
 				</a>
