@@ -17,7 +17,7 @@
 	--color-blue: #7fa2ac;
 	--color-purple: #d3869b;
 
-  --radius-field: 0.25rem;
+  --radius-field: 0.5rem;
 }
 
 :root:has(input.theme-controller[value='cappuccino']:checked),

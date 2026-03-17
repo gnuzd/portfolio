@@ -6,11 +6,11 @@
 <!-- DESKTOP TOP NAV (Hidden on Mobile) -->
 <nav class="fixed top-8 z-100 hidden w-full md:block">
 	<div
-		class="mx-auto flex max-w-6xl items-center justify-between rounded-2xl bg-base-200/80 px-8 py-4 backdrop-blur-md"
+		class="mx-auto flex max-w-6xl items-center justify-between rounded-2xl bg-base-200/80 px-6 py-4 backdrop-blur-md"
 	>
 		<div class="flex items-center gap-3">
 			<div
-				class="size-8 rounded-lg bg-green text-center text-lg leading-9 font-black text-base-100 uppercase"
+				class="size-8 rounded-lg bg-green flex items-center justify-center text-lg font-black text-base-100 uppercase"
 			>
 				{config.author.name.at(0)}
 			</div>
