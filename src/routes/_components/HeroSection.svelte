@@ -3,7 +3,7 @@
 	import Button from '$lib/components/Button.svelte';
 </script>
 
-<section class="mb-16 md:mb-32">
+<section class="mb-16 md:mb-24">
 	<div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
 		<div>
 			<h1

@@ -14,7 +14,7 @@
 <div class="flex h-dvh flex-col overflow-hidden">
 	<Header />
 	<Navbar />
-	<main class="flex-1 overflow-y-auto px-5 py-8 md:pt-32 md:pb-24">
+	<main class="flex-1 overflow-y-auto px-5 py-8 md:pt-40 md:pb-12">
 		<div class="mx-auto max-w-6xl">
 			{@render children()}
 			<Footer />

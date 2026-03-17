@@ -2,7 +2,7 @@
 	import { config } from '$lib/config';
 </script>
 
-<footer class="hidden border-t border-base-300 bg-base-100 px-8 py-20 md:block">
+<footer class="hidden border-t border-base-300 bg-base-100 px-8 py-10 md:block">
 	<div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-12 md:flex-row">
 		<div class="flex items-center gap-3">
 			<div
